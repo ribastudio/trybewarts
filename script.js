@@ -8,11 +8,21 @@ const option = document.getElementById('house');
 
 btnLogin.addEventListener('click', () => {
   if (formInput.value.match('tryber@teste.com') && (formInputPswd.value.match('123456'))) {
-    alert('Olá, Tryber!');
+    const modal = document.getElementById('dialog-login-success');
+    modal.showModal();
+    document.getElementById('login-confirm').onclick = () => {
+      modal.style.display = 'none';
+      window.location.reload(true); 
+    };
   } else {
-    document.getElementById('dialog-error').style.display = "block";
-  }
-});
+    const modal2 = document.getElementById('dialog-error');
+    modal2.showModal();
+    document.getElementById('dialog-error').onclick = () => {
+      modal2.style.display ='none';
+      window.location.reload(true);
+    }
+  };
+  });
 
 // função que retorna valores automágicos dos checkbox e dos radio
 function checkedBtn() {
