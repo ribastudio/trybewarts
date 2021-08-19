@@ -26,7 +26,6 @@
 
   <main>
     <form action="" id="evaluation-form" name="formy">
-
       <div class="flex-ctnr">
         <input type="text" placeholder="Nome" class="nes-input is-dark" name="nome" id="input-name">
         <input type="text" placeholder="Sobrenome" class="nes-input is-dark" name="lastname" id="input-lastname">
@@ -136,24 +135,24 @@
 
     <img id="trybewarts-forms-logo" src="images/trybewarts-pixel.svg" alt="Brasão Trybewarts">
   </main>
+  
+  <dialog class="nes-dialog is-dark is-rounded"  id="dialog-login-success">
+    <p class="title">Olá Tryber!</p>
+    <p>Como é bom te encontrar outra vez.</p>
+  <menu class="dialog-menu">
+    <button class="nes-btn is-primary" id="login-confirm">Confirm</button>
+  </menu>
+  </dialog>
+
+<dialog class="nes-dialog is-dark is-rounded" id="dialog-error">
+  <p class="title">Login ou senha inválidos!</p>
+  <p>Algo de errado não está certo.<br>Confira username e senha e tente outra vez.</p>
+  <menu class="dialog-menu">
+  <button class="nes-btn is-primary" id="login-error">Confirm</button>
+  </menu> 
+</dialog>
 
   <footer>Direitos reservados à Trybewarts© - Made with&nbsp;<img src="/images/hearts-is-dark.svg" alt="love/life" height="20px">&nbsp;by&nbsp;<a href="https://github.com/ribastudio">Riba Jr.</a>&nbsp;&&nbsp;<a href="https://github.com/nasseralm">Nasser Almeida</a></footer>
-
-    <dialog class="nes-dialog is-dark is-rounded"  id="dialog-login-success">
-      <p class="title">Olá Tryber!</p>
-      <p>Como é bom te encontrar outra vez.</p>
-    <menu class="dialog-menu">
-      <button class="nes-btn is-primary" id="login-confirm">Confirm</button>
-    </menu>
-    </dialog>
-
-  <dialog class="nes-dialog is-dark is-rounded" id="dialog-error">
-    <p class="title">Login ou senha inválidos!</p>
-    <p>Algo de errado não está certo.<br>Confira username e senha e tente outra vez.</p>
-    <menu class="dialog-menu">
-    <button class="nes-btn is-primary" id="login-error">Confirm</button>
-    </menu> 
-  </dialog>
 
 <script src="script.js"></script>
 </body>
