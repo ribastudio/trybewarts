@@ -1,8 +1,8 @@
 @font-face {
   font-family: Magic School Two;
   src: local('Magic School Two'), local('MagicSchoolTwo'),
-    url('MagicSchoolTwo.woff2') format('woff2'),
-    url('MagicSchoolTwo.woff') format('woff');
+  url('fonts/MagicSchoolTwo.woff2') format('woff2'),
+  url('fonts/MagicSchoolTwo.woff') format('woff');
   font-style: normal;
   font-display: swap;
 }
@@ -16,7 +16,6 @@ html, body, pre, code, kbd, samp {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
 }
 
 main {
@@ -29,7 +28,6 @@ main {
   background-image: url('images/bg-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Press Start 2P', cursive;
   font-size: small;
   color: white;
 }
@@ -39,6 +37,10 @@ body {
   margin: 0%;
   display: flex;
   flex-direction: column;
+}
+
+textarea {
+  resize:none;
 }
 
 footer {
@@ -54,7 +56,7 @@ footer {
 }
 
 .header {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +116,7 @@ footer {
 
 #evaluation-form input , select , textarea {
   padding: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-right: 10px;
 }
 
@@ -152,7 +154,6 @@ footer {
   height: 50px;
   padding: 10px 18px;
   margin-top: 4px;
-  font-family: 'Press Start 2P', cursive;
   color: white;
   text-shadow: 2px 2px rgb(18, 23, 97);
   background-color: rgb(29, 116, 247);
@@ -177,18 +178,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: left;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 #content-ctnr {
   flex-flow: wrap;
-  flex-basis: 40%;
+  flex-basis: 50%;
   padding: 0 15px;
 }
 
-#content-ctnr label {
+/* #content-ctnr label {
   margin-right: 20px;
-}
+} */
 
 #rate-ctnr {
   flex-flow: wrap;
@@ -196,11 +197,12 @@ footer {
 }
 
 #counter {
-  color:black;
+  color:white;
   position: relative;
-  bottom: 23px;
+  bottom: 26px;
   left: 89%;
   z-index: 1;
 }
+
 
 /* iniciando estilização pos avaliador */
