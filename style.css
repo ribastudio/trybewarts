@@ -55,10 +55,17 @@ footer {
   font-size: xx-small;
 }
 
+dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .header {
   background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   padding: 10px;
 }
@@ -68,6 +75,7 @@ footer {
 }
 
 #trybewarts-header-title {
+  margin-left: 2rem;
   color: white;
   font-family: Magic School Two, serif;
   font-weight: 400;
@@ -75,6 +83,7 @@ footer {
 }
 
 .trybewarts-login {
+  margin-left: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -84,23 +93,6 @@ footer {
   border-style: none;
   margin-right: 10px;
 }
-
-/* .trybewarts-login button {
-  padding: 15px 35px;
-  margin-right: 15px;
-  font-family: 'Press Start 2P', cursive;
-  color: white;
-  text-shadow: 2px 2px goldenrod;
-  background-color: rgba(247, 213, 29, 1);
-  box-shadow: inset -4px -4px goldenrod;
-}
-
-.trybewarts-login button:hover {
-  cursor: pointer;
-  background-color: goldenrod;
-  box-shadow: inset -4px -4px rgb(97, 74, 1) 
-} */
-
 
 .flex-ctnr {
   display: flex;
@@ -165,10 +157,6 @@ footer {
   flex-basis: 50%;
   padding: 0 15px;
 }
-
-/* #content-ctnr label {
-  margin-right: 20px;
-} */
 
 #rate-ctnr {
   flex-flow: wrap;
