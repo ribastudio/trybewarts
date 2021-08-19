@@ -17,7 +17,7 @@ btnLogin.addEventListener('click', () => {
   } else {
     const modal2 = document.getElementById('dialog-error');
     modal2.showModal();
-    document.getElementById('dialog-error').onclick = () => {
+    document.getElementById('login-error').onclick = () => {
       modal2.style.display ='none';
       window.location.reload(true);
     }

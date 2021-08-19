@@ -178,5 +178,14 @@ dialog {
   z-index: 1;
 }
 
+#modal-title {
+  color: yellow;
+}
+
+#tools {
+  align-self: center;
+  margin-left: 15%;
+  padding: 10px;
+}
 
 /* iniciando estilização pos avaliador */
