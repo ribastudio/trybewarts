@@ -53,12 +53,30 @@
         </div>
         <div class="flex-ctnr" id="content-ctnr">
           <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" value="HoFs">HoFs</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" value="Jest">Jest</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" id=""value="Promises">Promises</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" value="React">React</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" value="SQL">SQL</label>
-            <label><input class="subject nes-checkbox is-dark" type="checkbox" name="content" value="Python">Python</label>
+          <label>
+            <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="HoFs"/>
+            <span>HoFs</span>
+          </label>
+          <label>
+            <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="Jest"/>
+            <span>Jest</span>
+          </label>
+          <label>
+            <label>
+              <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="React"/>
+              <span>React</span>
+            </label>
+            <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="Promises"/>
+            <span>Promises</span>
+          </label>
+          <label>
+            <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="SQL"/>
+            <span>SQL</span>
+          </label>
+          <label>
+            <input type="checkbox" class="nes-checkbox is-dark" unchecked  name="content" value="Python"/>
+            <span>Python</span>
+          </label>
         </div>
       </div>
 
@@ -85,8 +103,11 @@
         <textarea class="textarea nes-textarea is-dark" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <p id="counter">500</p>        
       </div>
-      
-      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima? <input type="checkbox" class="nes-checkbox is-dark" id="agreement"></label>
+      <label id="label-infos" for="agreement">
+        <input type="checkbox" class="nes-checkbox is-dark" unchecked  id="agreement"/>
+        <span>Você concorda com o uso das informações acima?</span>
+      </label>
+
       <div class="flex-cntr"><button type="submit" class="nes-btn is-disabled"id="submit-btn" disabled>Enviar</button></div>
 
     </form>
