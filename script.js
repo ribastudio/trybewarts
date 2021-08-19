@@ -5,6 +5,11 @@ const checkBx = document.getElementById('agreement');
 const btnSubmit = document.getElementById('submit-btn');
 const formField = document.getElementById('evaluation-form');
 const option = document.getElementById('house');
+const trybeWarts = document.querySelector('#trybewarts-header-title');
+
+trybeWarts.addEventListener('click', () => {
+  window.reload();
+});
 
 btnLogin.addEventListener('click', () => {
   if (formInput.value.match('tryber@teste.com') && (formInputPswd.value.match('123456'))) {
