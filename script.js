@@ -10,7 +10,7 @@ btnLogin.addEventListener('click', () => {
   if (formInput.value.match('tryber@teste.com') && (formInputPswd.value.match('123456'))) {
     alert('Olá, Tryber!');
   } else {
-    alert('Login ou senha inválidos.');
+    document.getElementById('dialog-error').style.display = "block";
   }
 });
 
