@@ -98,6 +98,13 @@ dialog {
   flex-flow: wrap;
 }
 
+.checkers {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-flow: column wrap;
+}
+
 #evaluation-form {
   display: flex;
   justify-content: center;
