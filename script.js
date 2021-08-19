@@ -81,8 +81,10 @@ charCounter();
 checkBx.addEventListener('click', () => {
   if (btnSubmit.hasAttribute('disabled')) {
     btnSubmit.removeAttribute('disabled');
+    document.getElementById("submit-btn").className = "nes-btn is-primary";
   } else {
     btnSubmit.setAttribute('disabled', true);
+    document.getElementById("submit-btn").className = "nes-btn is-disabled";
   }
 });
 
