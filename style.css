@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Magic School Two;
+  src: local('Magic School Two'), local('MagicSchoolTwo'),
+    url('MagicSchoolTwo.woff2') format('woff2'),
+    url('MagicSchoolTwo.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body, pre, code, kbd, samp {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Estilizações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+main {
+  width: 100%;
+  height: 89%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('images/bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Press Start 2P', cursive;
+  font-size: small;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue;
+  font-size: xx-small;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 60px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: Magic School Two, serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-login input {
+  padding: 10px;
+  border-style: none;
+  margin-right: 10px;
+}
+
+.trybewarts-login button {
+  padding: 15px 35px;
+  margin-right: 15px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 2px 2px goldenrod;
+  background-color: rgba(247, 213, 29, 1);
+  box-shadow: inset -4px -4px goldenrod;
+}
+
+.trybewarts-login button:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+  box-shadow: inset -4px -4px rgb(97, 74, 1) 
+}
+
+
+.flex-ctnr {
+  display: flex;
+  flex-flow: wrap;
+}
+
+#evaluation-form {
+  display: flex;
+  justify-content: center;
+  width: 675px;
+  flex-flow: column wrap;
+}
+
+#evaluation-form input , select , textarea {
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#evaluation-form textarea {
+  width: 95%;
+}
+
+#evaluation-form label {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  flex-basis: 40%;
+}
+
+#input-name , #input-lastname {
+  flex-basis: 45%;
+}
+
+#input-email {
+  flex-basis: 60%;
+}
+
+#house {
+  width: 30%;
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 50px;
+  padding: 10px 18px;
+  margin-top: 4px;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  text-shadow: 2px 2px rgb(18, 23, 97);
+  background-color: rgb(29, 116, 247);
+  box-shadow: inset -4px -4px rgb(18, 23, 97);
+  border: none;
+}
+
+#submit-btn:disabled {
+  border: none;
+  color: gray;
+  text-shadow: 2px 2px rgb(39, 39, 44);
+  background-color: rgb(77, 78, 85);
+  box-shadow: inset -4px -4px rgb(39, 39, 44);
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  border: 4px solid whitesmoke;
+}
+
+#family-ctnr {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-basis: 50%;
+}
+
+#content-ctnr {
+  flex-flow: wrap;
+  flex-basis: 40%;
+  padding: 0 15px;
+}
+
+#content-ctnr label {
+  margin-right: 20px;
+}
+
+#rate-ctnr {
+  flex-flow: wrap;
+  justify-content: flex-start;
+}
+
+#counter {
+  color:black;
+  position: relative;
+  bottom: 23px;
+  left: 89%;
+  z-index: 1;
+}
+
+/* iniciando estilização pos avaliador */
