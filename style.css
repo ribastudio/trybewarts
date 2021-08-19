@@ -45,6 +45,7 @@ textarea {
 
 footer {
   margin-top: auto;
+  padding-bottom: 15px;
   width: 100%;
   min-height: 25px;
   display: flex;
